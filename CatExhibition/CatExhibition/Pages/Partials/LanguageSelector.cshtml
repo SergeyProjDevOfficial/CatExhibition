@@ -1,0 +1,12 @@
+﻿@model CatExhibition.PageModels.CustomizedPageModel
+
+<form method="post">
+    <ul>
+        @foreach (var item in Model.GetLanguages())
+        {
+            <li>
+                <input type="submit" asp-for="Language" value="@item" />
+            </li>
+        }
+    </ul>
+</form>

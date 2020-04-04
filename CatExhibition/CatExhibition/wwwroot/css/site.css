@@ -1,0 +1,35 @@
+﻿.width-80{
+    width: 90%;
+    margin-left: 5%
+}
+.bg-image {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a {
+    text-decoration: none !important
+}
+    .a:hover {
+        text-decoration: none
+    }
+
+.overflow {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.page-title-text {
+    position: absolute;
+    padding-top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    font-family: 'Minion Pro';
+    color: white;
+}

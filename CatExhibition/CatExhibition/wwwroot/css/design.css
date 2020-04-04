@@ -1,0 +1,47 @@
+﻿.main-text-color {
+    color: #ff9600;
+    font-family: 'Comic Sans MS';
+}
+.header-background-style {
+    background-color: #383838
+}
+.header-text-style {
+    color: #ff9600;
+    font-family: 'Comic Sans MS';
+}
+    .header-text-style:hover {
+        color: #ff9600;
+        font-weight: 600;
+        font-size: 20px
+    }
+.navbar-toggler-icon {
+    font-size: 30px;
+    color: #ff9600;
+}
+.footer-style {
+    background: #383838
+}
+.footer-col-title {
+    color: lightgray;
+    font-family: 'Comic Sans MS';
+    font-size: 15px;
+}
+.footer-text-style {
+    color: #ff9600;
+    font-family: 'Comic Sans MS';
+    font-size: 15px;
+}
+    .footer-text-style:hover {
+        color: #ff9600;
+        font-weight: 600;
+    }
+.index-page-article{
+    height: 20%;
+    background-color: black;
+    color: white
+}
+.article1-text {
+    font-size: 18px;
+    padding: 2%;
+    font-family: 'Segoe Print'
+}
