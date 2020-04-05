@@ -43,7 +43,9 @@ namespace CatExhibition
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    #if Release
                     webBuilder.UseKestrel();
+                    #endif
                 });
     }
 }

@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using CatExhibition.PageModels;
+using DataBaseWorkingLib.Context;
 
 namespace CatExhibition
 {
-    public class AdvertisingModel : PageModel
+    public class AdvertisingModel : CustomizedPageModel
     {
-        public void OnGet()
+        public AdvertisingModel(ContentTableContext context) : base(context)
         {
-
         }
     }
 }

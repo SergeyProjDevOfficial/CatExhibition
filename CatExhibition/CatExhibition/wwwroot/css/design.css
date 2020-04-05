@@ -8,12 +8,13 @@
 .header-text-style {
     color: #ff9600;
     font-family: 'Comic Sans MS';
+    font-size: 25px;
+    text-decoration: none;
 }
     .header-text-style:hover {
-        color: #ff9600;
-        font-weight: 600;
-        font-size: 20px
+        color: #ff8000;
     }
+
 .navbar-toggler-icon {
     font-size: 30px;
     color: #ff9600;
