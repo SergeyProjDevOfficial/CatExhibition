@@ -1,9 +1,92 @@
 ﻿@page
 @model CatExhibition.CategoriesModel
 @{
+    Layout = "_Layout";
     ViewData["Title"] = Model.GetItem("Categories");
 }
 
+<h1 class="page-title-text" tsl-content="CatTypes"></h1>
+<img class="bg-image" src="~/img/backgrounds/categories-page-bg.jpg" alt="@Model.GetItem("CatAlt")" />
 
-<h1>Categories</h1>
+<div class="main1-bg-block-20">
+    <h2 class="main-text-style" style="padding-left: 2%; padding-top: 2%; font-size: 18px">@Model.GetItem("Categories"):</h2>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="All"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Redheads"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Gray"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Small"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Fatty"></h6>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li style="padding-top: 35px"></li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Fluffy"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Sad"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Black"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Funny"></h6>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li style="padding-top: 35px"></li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Wild"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="White"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Hairless"></h6>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h6 class="main-text-style-hovered" tsl-content="Celebrities"></h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="padding-bottom: 2%"></div>
+</div>
 
+<div class="main2-bg-block-50">
+    <h2 class="padding-top-bot-small main-text-style" style="font-size: 25px; text-align: center">@Model.GetItem("Category") : @Model.GetItem("Redheads")</h2>
+    <div class="row-images">
+        <div class="column-images">
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat1.jpg" />
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat2.jpg" />
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat3.jpg" />
+        </div>
+        <div class="column-images">
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat4.jpg" />
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat5.jpg" />
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat6.jpg" />
+        </div>
+        <div class="column-images">
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat7.jpg" />
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat8.jpg" />
+            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat9.jpg" />
+        </div>
+    </div>
+</div>

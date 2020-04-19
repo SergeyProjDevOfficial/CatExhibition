@@ -25,11 +25,31 @@
 }
 .page-title-text {
     position: absolute;
-    padding-top: 65%;
+    padding-top: 75%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     font-size: 5vw;
     font-family: 'Minion Pro';
     color: white;
+}
+.row-images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column-images {
+    float: left;
+    flex: 25%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.padding-top-bot-small{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.image-centered {
+    margin: 10px auto 20px;
+    display: block;
 }

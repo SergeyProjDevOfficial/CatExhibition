@@ -27,18 +27,28 @@
     font-family: 'Comic Sans MS';
     font-size: 15px;
 }
-.footer-text-style {
+.main-text-style-hovered {
     color: #ff9600;
     font-family: 'Comic Sans MS';
-    font-size: 15px;
+    font-size: 20px;
 }
-    .footer-text-style:hover {
+    .main-text-style-hovered:hover {
         color: #ff9600;
         font-weight: 600;
     }
-.index-page-article{
+.main-text-style {
+    color: #ff9600;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+}
+.main1-bg-block-20{
     height: 20%;
     background-color: black;
+    color: white
+}
+.main2-bg-block-50 {
+    height: 50%;
+    background-color: dimgray;
     color: white
 }
 .article1-text {
