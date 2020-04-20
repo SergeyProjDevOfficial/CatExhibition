@@ -1,0 +1,14 @@
+﻿<form method="get" class="text-center border border-dark p-5 container" style="width: 50%;">
+    <h1 class="centered-article-header main-text-style" tsl-content="WriteUs"></h1>
+    <div class="form-row mb-4">
+        <div class="col">
+            <input type="text" id="firstNameField" class="form-control" placeholder="@Model.GetItem("Firstname")" autofocus required>
+        </div>
+        <div class="col">
+            <input type="text" id="lastNameField" class="form-control" placeholder="@Model.GetItem("Lastname")">
+        </div>
+    </div>
+    <input type="email" id="email" class="form-control mb-4" autocomplete="on" placeholder="@Model.GetItem("Email")" required>
+    <textarea placeholder="@Model.GetItem("YourMessage")" style="width: 100%"></textarea>
+    <input type="submit" class="btn btn-success my-4 btn-block" value="@Model.GetItem("Send")">
+</form>

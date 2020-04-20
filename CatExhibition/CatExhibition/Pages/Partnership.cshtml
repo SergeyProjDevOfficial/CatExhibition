@@ -1,8 +1,22 @@
 ﻿@page
 @model CatExhibition.PartnershipModel
 @{
-    ViewData["Title"] = "Partnership";
+    Layout = "_Layout";
+    ViewData["Title"] = Model.GetItem("Partnership");
+    var isFormSent = Model.Request.QueryString.ToString() == "?" ? true : false;
 }
 
-<h1>Partnership</h1>
+@if (!isFormSent)
+{
+    <div class="main2-bg-block-50">
+        <div style="padding-top: 75px;"></div>
+        <div class="main-text-style centered-article-header" tsl-content="Partnership"></div>
+        <partial name="Partials/ContactForm" model="Model" />
+    </div>
+}
+else
+{
+    <div class="center main-text-style" style="font-size: 40px" tsl-content="MessageSent"></div>
+}
+
 

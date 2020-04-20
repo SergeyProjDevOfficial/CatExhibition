@@ -1,8 +1,13 @@
 ﻿@page
 @model CatExhibition.ConditionsModel
 @{
-    ViewData["Title"] = "Conditions";
+    Layout = "_Layout";
+    ViewData["Title"] = Model.GetItem("Conditions");
 }
 
-<h1>Conditions</h1>
+<div class="main2-bg-block-50 width-60">
+    <div style="padding-top: 75px;"></div>
+    <h1 class="centered-article-header main-text-color" tsl-content="PoliticConfidence"></h1>
+    <div tsl-content="PrivacyFullText"></div>
+</div>
 

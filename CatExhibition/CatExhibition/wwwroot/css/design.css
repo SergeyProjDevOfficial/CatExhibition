@@ -1,4 +1,7 @@
-﻿.main-text-color {
+﻿body {
+    background: #000000
+}
+.main-text-color {
     color: #ff9600;
     font-family: 'Comic Sans MS';
 }
@@ -14,15 +17,11 @@
     .header-text-style:hover {
         color: #ff8000;
     }
-
 .navbar-toggler-icon {
     font-size: 30px;
     color: #ff9600;
 }
 .footer-style {
-    background: #000000
-}
-body {
     background: #000000
 }
 .footer-col-title {
@@ -34,6 +33,7 @@ body {
     color: #ff9600;
     font-family: 'Comic Sans MS';
     font-size: 20px;
+    cursor: pointer
 }
     .main-text-style-hovered:hover {
         color: #ff9600;
@@ -42,7 +42,6 @@ body {
 .main-text-style {
     color: #ff9600;
     font-family: 'Comic Sans MS';
-    font-size: 20px;
 }
 .main1-bg-block-20{
     height: 20%;
@@ -51,7 +50,7 @@ body {
 }
 .main2-bg-block-50 {
     height: 50%;
-    background-color: dimgray;
+    background-color: #3C3C3C;
     color: white
 }
 .text-style-1 {
@@ -67,16 +66,11 @@ body {
     font-family: 'Segoe Print';
     text-align: center
 }
-.centered-article-header {
-    text-align: center;
-    padding-top:20px;
-    padding-bottom: 20px;
-    font-size: 30px;
-}
-
 .language-selector-btn {
     background-color: Transparent;
     color: #ff9600;
     border-color: #ff9600;
 }
-
+.zoom-overlay {
+    background: #000;
+}

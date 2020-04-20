@@ -3,13 +3,18 @@
 @{
     Layout = "_Layout";
     ViewData["Title"] = Model.GetItem("Categories");
+
+    ViewData["AdditionalCssLibs"] = string.Concat(
+        "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/zoom.css\">",
+        "<script src=\"js/zoom.min.js\"></script>"
+    );
 }
 
 <h1 class="page-title-text" tsl-content="CatTypes"></h1>
 <img class="bg-image" src="~/img/backgrounds/categories-page-bg.jpg" alt="@Model.GetItem("CatAlt")" />
 
 <div class="main1-bg-block-20">
-    <h2 class="main-text-style" style="padding-left: 2%; padding-top: 2%; font-size: 18px">@Model.GetItem("Categories"):</h2>
+    <h2 class="main-text-style" style="padding-left: 2%; padding-top: 2%; font-size: 30px">@Model.GetItem("Categories"):</h2>
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-3">
@@ -71,22 +76,22 @@
 </div>
 
 <div class="main2-bg-block-50">
-    <h2 class="padding-top-bot-small main-text-style" style="font-size: 25px; text-align: center">@Model.GetItem("Category") : @Model.GetItem("Redheads")</h2>
+    <h2 class="padding-top-bot-small main-text-style centered-article-header">@Model.GetItem("Category") : @Model.GetItem("Redheads")</h2>
     <div class="row-images">
         <div class="column-images">
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat1.jpg" />
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat2.jpg" />
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat3.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat1.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat2.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat3.jpg" />
         </div>
         <div class="column-images">
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat4.jpg" />
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat5.jpg" />
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat6.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat4.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat5.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat6.jpg" />
         </div>
         <div class="column-images">
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat7.jpg" />
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat8.jpg" />
-            <img class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat9.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat7.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat8.jpg" />
+            <img data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat9.jpg" />
         </div>
     </div>
 </div>
