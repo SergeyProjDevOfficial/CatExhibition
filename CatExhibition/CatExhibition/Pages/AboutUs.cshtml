@@ -1,8 +1,20 @@
 ﻿@page
 @model CatExhibition.AboutUsModel
 @{
-    ViewData["Title"] = "AboutUs";
+    Layout = "_Layout";
+    ViewData["Title"] = Model.GetItem("AboutUs");
 }
 
-<h1>AboutUs</h1>
+<h1 class="page-title-text" tsl-content="WhoAreWe"></h1>
+<img class="bg-image" src="~/img/backgrounds/about-us-page-bg.jpg" alt="@Model.GetItem("CatAlt")" />
 
+<div class="header-background-style">
+    <h2 class="main-text-style centered-article-header" tsl-content="FirstEx"></h2>
+    <p class="text-style-2" tsl-content="About-us-part1"></p>
+    <img src="~/img/about-us/1.jpg" class="image-centered" alt="@Model.GetItem("CatAlt")" />
+    <p class="text-style-2" tsl-content="About-us-part2"></p>
+    <img src="~/img/about-us/2.jpg" class="image-centered" alt="@Model.GetItem("CatAlt")" />
+    <p class="text-style-2" tsl-content="About-us-part3"></p>
+    <img src="~/img/about-us/3.jpg" class="image-centered" alt="@Model.GetItem("CatAlt")" />
+    <p class="text-style-2" tsl-content="About-us-part4"></p>
+</div>

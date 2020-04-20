@@ -52,4 +52,6 @@
 .image-centered {
     margin: 10px auto 20px;
     display: block;
+    width: 100%;
+    max-width: 800px
 }

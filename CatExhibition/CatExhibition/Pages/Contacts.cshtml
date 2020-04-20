@@ -1,8 +1,18 @@
 ﻿@page
 @model CatExhibition.ContactsModel
 @{
-    ViewData["Title"] = "Contacts";
+    Layout = "_Layout";
+    ViewData["Title"] = Model.GetItem("Contacts");
 }
 
-<h1>Contacts</h1>
+<h1 class="page-title-text" tsl-content="WhereWeAre"></h1>
+<img class="bg-image" src="~/img/backgrounds/contacts-page-bg.jpg" alt="@Model.GetItem("CatAlt")" />
 
+<div class="header-background-style">
+    <h2 class="main-text-style centered-article-header" tsl-content="CatShow"></h2>
+    <div class="text-style-1" tsl-content="Article2"></div>
+    <h2 class="main-text-style centered-article-header" tsl-content="OnMap"></h2>
+    <iframe style="height: 300px; width: 100%;" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=kijiv&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+</div>

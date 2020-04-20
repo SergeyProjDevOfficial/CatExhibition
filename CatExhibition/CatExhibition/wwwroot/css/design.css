@@ -3,7 +3,7 @@
     font-family: 'Comic Sans MS';
 }
 .header-background-style {
-    background-color: #383838
+    background-color: #2e2e2e
 }
 .header-text-style {
     color: #ff9600;
@@ -20,7 +20,10 @@
     color: #ff9600;
 }
 .footer-style {
-    background: #383838
+    background: #000000
+}
+body {
+    background: #000000
 }
 .footer-col-title {
     color: lightgray;
@@ -51,8 +54,29 @@
     background-color: dimgray;
     color: white
 }
-.article1-text {
+.text-style-1 {
     font-size: 18px;
+    color: white;
     padding: 2%;
     font-family: 'Segoe Print'
 }
+.text-style-2 {
+    font-size: 18px;
+    color: white;
+    padding: 2%;
+    font-family: 'Segoe Print';
+    text-align: center
+}
+.centered-article-header {
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.language-selector-btn {
+    background-color: Transparent;
+    color: #ff9600;
+    border-color: #ff9600;
+}
+
