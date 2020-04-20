@@ -1,11 +1,11 @@
 ﻿@model CatExhibition.PageModels.CustomizedPageModel
 
 <form method="post">
-    <ul type="none" style="float: right" class="main-text-color">
+    <ul style="float: right" class="main-text-color">
         @foreach (var item in Model.GetLanguages())
         {
             <li>
-                <input class="language-selector-btn" type="submit" asp-for="Language" value="@item" />
+                <input class="language-selector-btn" type="submit" name="Language" value="@item" />
             </li>
         }
     </ul>

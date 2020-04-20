@@ -1,4 +1,8 @@
-﻿.width-80{
+﻿ul {
+    list-style-type: none;
+}
+
+.width-80{
     width: 90%;
     margin-left: 5%
 }
@@ -11,10 +15,10 @@
     background-size: cover;
 }
 
-.a {
+a {
     text-decoration: none !important
 }
-    .a:hover {
+    a:hover {
         text-decoration: none
     }
 
