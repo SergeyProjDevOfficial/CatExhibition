@@ -2,11 +2,8 @@
     width: 90%;
     margin-left: 5%
 }
-.width-60 {
-    width: 60%;
-    margin-left: 20%;
-}
 .bg-image {
+    margin-top: -25px;
     height: 100%;
     width: 100%;
     background-position: center;
@@ -64,12 +61,4 @@
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 40px;
-}
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
 }
