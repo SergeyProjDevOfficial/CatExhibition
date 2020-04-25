@@ -53,6 +53,7 @@ a {
 .image-centered {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .centered-article-header {
     text-align: center;
