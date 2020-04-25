@@ -15,6 +15,17 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\img\backgrounds\" />
+    <Folder Include="wwwroot\img\cats\gray\" />
+    <Folder Include="wwwroot\img\cats\fatty\" />
+    <Folder Include="wwwroot\img\cats\fluffy\" />
+    <Folder Include="wwwroot\img\cats\black\" />
+    <Folder Include="wwwroot\img\cats\funny\" />
+    <Folder Include="wwwroot\img\cats\hairless\" />
+    <Folder Include="wwwroot\img\cats\celebrities\" />
+    <Folder Include="wwwroot\img\cats\white\" />
+    <Folder Include="wwwroot\img\cats\wild\" />
+    <Folder Include="wwwroot\img\cats\sad\" />
+    <Folder Include="wwwroot\img\cats\small\" />
     <Folder Include="wwwroot\img\cats\redheads\" />
   </ItemGroup>
 

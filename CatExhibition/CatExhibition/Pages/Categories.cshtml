@@ -8,10 +8,27 @@
         "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/zoom.css\">",
         "<script src=\"js/zoom.min.js\"></script>"
     );
+
+    var categories = new List<string>() { 
+        "All", 
+        "Redheads",
+        "Gray", 
+        "Small", 
+        "Fatty", 
+        "Fluffy",
+        "Sad",
+        "Black",
+        "Funny",
+        "Wild",
+        "White",
+        "Hairless",
+        "Celebrities"
+    };
 }
 
 <h1 class="page-title-text" tsl-content="CatTypes"></h1>
 <img class="bg-image" src="~/img/backgrounds/categories-page-bg.jpg" alt="@Model.GetItem("CatAlt")" />
+
 
 <div class="main1-bg-block-20">
     <h2 class="main-text-style" style="padding-left: 2%; padding-top: 2%; font-size: 30px">@Model.GetItem("Categories"):</h2>
@@ -20,36 +37,19 @@
             <div class="col-md-3">
                 <ul class="list-unstyled">
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="All"></h6>
+                        <h3 class="main-text-style-hovered fnc-category selected" data-name="all" tsl-content="All"></h3>
                     </li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Redheads"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="redheads" tsl-content="Redheads"></h3>
                     </li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Gray"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="gray" tsl-content="Gray"></h3>
                     </li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Small"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="small" tsl-content="Small"></h3>
                     </li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Fatty"></h6>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <ul class="list-unstyled">
-                    <li style="padding-top: 35px"></li>
-                    <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Fluffy"></h6>
-                    </li>
-                    <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Sad"></h6>
-                    </li>
-                    <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Black"></h6>
-                    </li>
-                    <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Funny"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="fatty" tsl-content="Fatty"></h3>
                     </li>
                 </ul>
             </div>
@@ -57,16 +57,33 @@
                 <ul class="list-unstyled">
                     <li style="padding-top: 35px"></li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Wild"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="fluffy" tsl-content="Fluffy"></h3>
                     </li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="White"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="sad" tsl-content="Sad"></h3>
                     </li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Hairless"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="black" tsl-content="Black"></h3>
                     </li>
                     <li style="padding-top: 10px">
-                        <h6 class="main-text-style-hovered" tsl-content="Celebrities"></h6>
+                        <h3 class="main-text-style-hovered fnc-category" data-name="funny" tsl-content="Funny"></h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li style="padding-top: 35px"></li>
+                    <li style="padding-top: 10px">
+                        <h3 class="main-text-style-hovered fnc-category" data-name="wild" tsl-content="Wild"></h3>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h3 class="main-text-style-hovered fnc-category" data-name="white" tsl-content="White"></h3>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h3 class="main-text-style-hovered fnc-category" data-name="hairless" tsl-content="Hairless"></h3>
+                    </li>
+                    <li style="padding-top: 10px">
+                        <h3 class="main-text-style-hovered fnc-category" data-name="celebrities" tsl-content="Celebrities"></h3>
                     </li>
                 </ul>
             </div>
@@ -75,23 +92,120 @@
     <div style="padding-bottom: 2%"></div>
 </div>
 
+
 <div class="main2-bg-block-50">
-    <h2 class="padding-top-bot-small main-text-style centered-article-header">@Model.GetItem("Category") : @Model.GetItem("Redheads")</h2>
-    <div class="row-images">
-        <div class="column-images">
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat1.jpg" />
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat2.jpg" />
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat3.jpg" />
+    @*<h2 class="padding-top-bot-small main-text-style centered-article-header">@Model.GetItem("Category") : @Model.GetItem("All")</h2>*@
+    @foreach (var category in categories.Skip(1))
+    {
+        <div class="row-images" data-name="@category.ToLower()">
+            <div class="column-images">
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat1.jpg" />
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat2.jpg" />
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat3.jpg" />
+            </div>                                                                                      
+            <div class="column-images">                                                                 
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat4.jpg" />
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat5.jpg" />
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat6.jpg" />
+            </div>                                                                                      
+            <div class="column-images">                                                                 
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat7.jpg" />
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat8.jpg" />
+                <img alt="@(Model.GetItem(category) + " " + Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/@category.ToLower()/cat9.jpg" />
+            </div>
         </div>
-        <div class="column-images">
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat4.jpg" />
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat5.jpg" />
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat6.jpg" />
-        </div>
-        <div class="column-images"> 
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat7.jpg" />
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat8.jpg" />
-            <img alt="@(Model.GetItem("Redheads")+" "+Model.GetItem("CatAlt"))" data-action="zoom" class="image-centered padding-top-bot-small" src="~/img/cats/redheads/cat9.jpg" />
-        </div>
-    </div>
+    }
 </div>
+
+
+<script>
+    $(document).ready(function () {
+
+        var ArticlesFilter = {
+  
+            AllArticleItems: [],
+            AllSelector: '',
+            TagSelector: [],
+            SelectedTags: [],
+  
+            init: function (itemSelector, tagSelector, allSelector) {
+                ArticlesFilter.AllArticleItems = $(itemSelector);
+                ArticlesFilter.TagSelector = $(tagSelector);
+                ArticlesFilter.AllSelector = $(allSelector);
+
+                if (ArticlesFilter.AllSelector) {
+                    ArticlesFilter.AllSelector.click(function () {
+                        ArticlesFilter.SelectedTags = [];
+                        ArticlesFilter.setSlected();
+                        $(this).addClass('selected');
+                    });
+                }
+                if (ArticlesFilter.TagSelector.length) {
+                    ArticlesFilter.TagSelector.each(function (key, item) {
+                        ArticlesFilter.initTagItem($(item));
+                    });
+                }
+            },
+  
+            initTagItem: function ($tag) {
+                var tagName = $tag.data('name');
+                $tag.click(function () {
+                    $(this).toggleClass('selected');
+                    if ($(this).is('.selected')) {
+                        ArticlesFilter.SelectedTags = [];
+                        ArticlesFilter.SelectedTags.push(tagName);
+                    } else {
+                        var index = ArticlesFilter.SelectedTags.indexOf(tagName);
+                        ArticlesFilter.SelectedTags.splice(index, 1);
+                    }
+                    if (ArticlesFilter.SelectedTags.length < 1) {
+                        ArticlesFilter.SelectedTags = [];
+                        ArticlesFilter.setSlected();
+                        ArticlesFilter.AllSelector.addClass('selected');
+                    } else {
+                        ArticlesFilter.setSlected();
+                    }
+                });
+  
+            },
+  
+            setSlected: function () {
+                $(ArticlesFilter.TagSelector).removeClass('selected');
+                $(ArticlesFilter.AllArticleItems).removeClass('selected');
+                $(ArticlesFilter.SelectedTags).each(function (key, item) {
+                    var siblingsSelected = $("[data-name='" + item + "']");
+                    if (siblingsSelected.length) {
+                        siblingsSelected.addClass('selected');
+                    }
+                });
+                
+                ArticlesFilter.filterBlocks();
+            },
+  
+            filterBlocks: function () {
+                var isAllSelected = true;
+                $(ArticlesFilter.AllArticleItems).each(function (key, item) {
+                    var $item = $(item);
+                    if ($item.hasClass('selected')) {
+                        isAllSelected = false;
+                    } 
+                });
+                $(ArticlesFilter.AllArticleItems).each(function (key, item) {
+                    var $item = $(item);
+                    if (isAllSelected) {
+                        $item.show();
+                    }
+                    else {
+                        if ($item.hasClass('selected')) {
+                            $item.show();
+                        } else {
+                            $item.hide();
+                        }
+                    }
+                });
+            }
+        };
+
+        ArticlesFilter.init('.row-images', '.fnc-category', '.fnc-category.selected');
+    });
+</script>

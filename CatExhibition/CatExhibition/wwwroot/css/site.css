@@ -44,25 +44,32 @@ a {
     padding: 0 4px;
 }
 .column-images {
-    float: left;
-    flex: 25%;
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+    margin: auto
 }
 .padding-top-bot-small{
     padding-bottom: 15px;
     padding-top: 15px;
 }
 .image-centered {
-    margin: 10px auto 20px;
-    display: block;
-    width: 100%;
-    max-width: 800px
+    display: flex;
+    flex-wrap: wrap;
 }
 .centered-article-header {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 40px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.fnc-category.selected {
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: underline;
 }
